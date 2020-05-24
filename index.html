@@ -24,15 +24,20 @@
 </head>
 <body>
 
+Open website: <input type="text" id="myText" value="https://google.com">
 
-<div class="container"> 
-  <iframe class="responsive-iframe" src="https://www.google.com/"></iframe>
-</div>
-  
-  <br> <br>
-<div class="container"> 
-  <iframe class="responsive-iframe" src="https://github.com/"></iframe>
-</div>
+<p>Click the button to add the Frame</p>
 
+<button onclick="addFrame()">Try it</button>
+
+<script>
+function addFrame() {
+  var xyz = document.getElementById("myText").value;
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", xyz);
+        ifrm.classList.add("responsive-iframe");
+        document.body.appendChild(ifrm);
+}
+</script>
 </body>
 </html>
