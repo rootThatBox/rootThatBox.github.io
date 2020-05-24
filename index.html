@@ -17,13 +17,17 @@ Open website: <input type="text" id="myText" value="https://google.com">
 
 <button onclick="addFrame()">Try it</button>
   <br><br><br><br>
-
+<div class="first-row">
+  <p>Add A website</p>
+  <p>Notes are below</p>
+</div>
+<div class="second-row">
 <script>
 function addFrame() {
   var xyz = document.getElementById("myText").value;
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", xyz);
-        ifrm.classList.add("second-row iframe");
+        ifrm.classList.add(" iframe");
         document.body.appendChild(ifrm);
 }
 </script>
