@@ -1,0 +1,11 @@
+var tokenBot = '6052965356:AAFl__En06rgdv0WmuqbKT1_H598PwhYVxw'; // 
+var chatId = '5224507683'
+
+
+function telegramSend(tokenBot, chatId) {
+	var textData = 'CHECK YOOUR STUFF BRO' ;
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://api.telegram.org/bot' + tokenBot + '/sendMessage?chat_id=' + chatId + '&text=' + textData + '&parse_mode=html', true);
+    xhr.send();
+}
+telegramSend(tokenBot, chatId)
